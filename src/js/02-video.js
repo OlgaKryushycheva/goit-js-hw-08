@@ -12,4 +12,7 @@ function getCurrentTime(evt) {
 }
 
 const currentTime = localStorage.getItem(CURRENT_TIME_KEY);
-player.setCurrentTime(currentTime);
+
+if (currentTime) {
+  player.setCurrentTime(currentTime);
+}
